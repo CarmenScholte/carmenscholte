@@ -1,0 +1,18 @@
+@import '../style/variables';
+
+.personal {
+
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1000px;
+  margin: $gutter/2;
+}
+
+.icon {
+  font-size: 30px;
+  margin: $gutter/3;
+}

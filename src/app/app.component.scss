@@ -1,0 +1,74 @@
+@import './style/variables';
+@import './style/mixins';
+
+.root {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	width: 100%;
+}
+
+.nav {
+  @media (min-width: $md) {
+    @include elevation(0);
+    flex-direction: column;
+  }
+
+  @include elevation(2);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $gutter/2;
+
+  &__menu {
+    @media (min-width: $md) {
+      display: flex;
+      flex-direction: row;
+      padding: $gutter/2;
+    }
+
+    display: none;
+
+    &__icon {
+      @media (min-width: $md) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      @media (min-width: $md) {
+        display: none;
+      }
+
+      position: relative;
+    }
+  }
+}
+
+.menu {
+  &--mobile {
+    @include elevation(4);
+    background-color: $cloud;
+    position: absolute;
+    right: 0;
+    top: $gutter;
+    z-index: 4;
+  }
+
+  display: flex;
+  flex-direction: row;
+
+  &__item {
+    @media (min-width: $md) {
+      border-bottom: 2px solid $coal;
+      font-weight: 500;
+      margin: 0 $gutter/2;
+      padding: $gutter/2 $gutter/2 2px;
+    }
+
+    border-bottom: 1px solid $smoke;
+    color: $storm;
+    padding: $gutter/2 $gutter;
+  }
+}

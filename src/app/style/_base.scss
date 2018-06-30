@@ -1,0 +1,33 @@
+@import './variables';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: transparentize($black, 0.5);
+
+  &--transparent {
+    background-color: transparent;
+  }
+}
+
+.container {
+  margin-top: $gutter;
+  max-width: 1200px;
+  padding: 0 ($gutter*2) $gutter;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 20px;
+  margin-bottom: $gutter/3;
+
+  &--small {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+}
