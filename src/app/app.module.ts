@@ -5,12 +5,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { ArtworkComponent } from './artwork/artwork.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '/', pathMatch: 'full' },
-	{ path: 'artwork', component: ArtworkComponent },
+	{ path: 'gallery', component: GalleryComponent },
 	{ path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '/'}
@@ -22,7 +22,7 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ArtworkComponent
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
