@@ -1,6 +1,6 @@
 <div>
   <div class="nav">
-    <h2 class="nav__title">{{title}}</h2>
+    <h2 class="nav__title"><a routerLink="/">{{title}}</a></h2>
 
     <div class="nav__menu--mobile">
       <a class="nav__menu__icon" (click)="toggle = !toggle"><i class="fas fa-bars"></i></a>
@@ -8,16 +8,16 @@
       <div *ngIf="toggle">
         <div class="overlay overlay--transparent" (click)="toggle = false"></div>
         <ul class="menu--mobile" (click)="toggle = false">
-          <li class="menu__item"><a routerLink="/">Artwork</a></li>
+          <li class="menu__item"><a routerLink="/artwork">Artwork</a></li>
           <li class="menu__item"><a routerLink="/about">About</a></li>
           <li class="menu__item"><a routerLink="/contact">Contact</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="nav__menu">
+    <div class="nav__menu" (scroll)="onScroll($event)">
       <ul class="menu">
-        <li class="menu__item"><a routerLink="/">Artwork</a></li>
+        <li class="menu__item"><a routerLink="/artwork">Artwork</a></li>
         <li class="menu__item"><a routerLink="/about">About</a></li>
         <li class="menu__item"><a routerLink="/contact">Contact</a></li>
       </ul>
@@ -27,9 +27,6 @@
   <div class="root">
     <router-outlet></router-outlet>
   </div>
-
-
-
 </div>
 
 

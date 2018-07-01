@@ -10,7 +10,6 @@
 
 .nav {
   @media (min-width: $md) {
-    @include elevation(0);
     flex-direction: column;
   }
 

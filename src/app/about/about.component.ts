@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+	public age: number;
+
+  constructor() {
+    this.age = this.getAge();
+  }
 
   ngOnInit() {
   }
+
+	private getAge(): number {
+		let birthday = new Date(1989, 3, 26);
+		let diff = Math.abs(Date.now() - birthday.getTime());
+		return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+	}
 
 }

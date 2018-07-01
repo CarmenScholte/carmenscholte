@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-root',
@@ -9,5 +11,15 @@ export class AppComponent {
 
   public title = '- CSL -';
   public toggle: boolean = false;
+
+	constructor(@Inject(DOCUMENT) private document: Document) {
+
+	}
+
+	@HostListener('window:scroll', ['$event'])
+	onScroll(event) {
+		console.log('Scrolling...');
+		console.log(event);
+	}
 
 }
