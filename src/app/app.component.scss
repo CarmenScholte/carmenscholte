@@ -60,7 +60,7 @@
 
   &__item {
     @media (min-width: $md) {
-      border-bottom: 2px solid $coal;
+      border-bottom: 1px solid $coal;
       font-weight: 500;
       margin: 0 $gutter/2;
       padding: $gutter/2 $gutter/2 2px;

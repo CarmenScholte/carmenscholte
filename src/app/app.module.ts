@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { CvComponent } from './cv/cv.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
 	{ path: 'gallery', component: GalleryComponent },
 	{ path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+	{ path: 'cv', component: CvComponent, data: {isCv: true} },
   { path: '**', redirectTo: '/'}
 ];
 
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    GalleryComponent
+    GalleryComponent,
+		CvComponent
   ],
   imports: [
     BrowserModule,
