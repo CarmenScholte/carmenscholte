@@ -1,6 +1,6 @@
 <div>
   <div class="nav" *ngIf="showNavigation">
-    <h2 class="nav__title"><a routerLink="/">{{title}}</a></h2>
+    <h2 class="nav__title"><a>{{ 'title' | translate}}</a></h2>
 
     <div class="nav__menu--mobile">
       <a class="nav__menu__icon" (click)="toggle = !toggle"><i class="fas fa-bars"></i></a>
@@ -9,8 +9,12 @@
         <div class="overlay overlay--transparent" (click)="toggle = false"></div>
         <ul class="menu--mobile" (click)="toggle = false">
           <li class="menu__item"><a routerLink="/gallery">Gallery</a></li>
-          <li class="menu__item"><a routerLink="/about">About</a></li>
+          <li class="menu__item"><a routerLink="/about">Artist</a></li>
           <li class="menu__item"><a routerLink="/contact">Contact</a></li>
+
+          <li class="menu__item" (click)="translate('nl')"><a><strong>NL</strong></a></li>
+          <li class="menu__item" (click)="translate('en')"><a><strong>EN</strong></a></li>
+
         </ul>
       </div>
     </div>
@@ -18,9 +22,16 @@
     <div class="nav__menu" (scroll)="onScroll($event)">
       <ul class="menu">
         <li class="menu__item"><a routerLink="/gallery">Gallery</a></li>
-        <li class="menu__item"><a routerLink="/about">About</a></li>
+        <li class="menu__item"><a routerLink="/about">Artist</a></li>
         <li class="menu__item"><a routerLink="/contact">Contact</a></li>
       </ul>
+    </div>
+
+    <div class="nav__menu">
+      <div>
+        <button class="button button--lang" (click)="translate('nl')">NL</button>
+        <button class="button button--lang" (click)="translate('en')">EN</button>
+      </div>
     </div>
   </div>
 

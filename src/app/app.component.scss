@@ -1,5 +1,4 @@
-@import './style/variables';
-@import './style/mixins';
+@import '../css/public';
 
 .root {
 	display: flex;
@@ -9,10 +8,6 @@
 }
 
 .nav {
-  @media (min-width: $md) {
-    flex-direction: column;
-  }
-
   @include elevation(2);
   align-items: center;
   display: flex;

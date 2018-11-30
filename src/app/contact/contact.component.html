@@ -1,16 +1,13 @@
 <div class="container">
   <div class="personal">
     <p class="paragraph">Carmen Scholte Lubberink</p>
-    <p class="paragraph">Groningen, Netherlands</p>
+    <p class="paragraph">{{'contact.address' | translate}}</p>
   </div>
 
   <div class="contact-info">
     <p class="paragraph">
-        Feel free to contact me if you want to have your portrait made or if you have any questions about my work.
-    </p>
-    <p class="paragraph">Send an <a href="mailto:c.scholte.lubberink@gmail.com"><strong>email</strong></a> to
-        <strong>c.scholte.lubberink@gmail.com</strong> or message me on <a href="https://www.facebook.com/carmenscholte/">
-        <strong>Facebook</strong></a> or <a href="https://www.instagram.com/carmenscholte/"><strong>Instagram</strong></a>.
+        {{ 'contact.question' | translate}} </p>
+    <p class="paragraph" [innerHtml]="'contact.media' | translate">
     </p>
   </div>
 
@@ -21,4 +18,7 @@
     <i class="fab fa-instagram"></i>
   </a>
 
+  <div class="bedrijfsinfo">
+    <p class="paragraph">KVK 70359242</p>
+  </div>
 </div>
