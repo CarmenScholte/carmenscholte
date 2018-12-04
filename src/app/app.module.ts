@@ -13,8 +13,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { CvComponent } from './cv/cv.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/gallery', pathMatch: 'full' },
+  { path: 'home', redirectTo: '/gallery', pathMatch: 'full' },
 	{ path: 'gallery', component: GalleryComponent },
 	{ path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },

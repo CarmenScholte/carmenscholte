@@ -1,5 +1,23 @@
 @import './variables';
 
+body {
+  @media(min-width: $md) {
+    margin: 20px;
+    padding: 40px;
+  }
+  background-color: $cloud;
+  box-sizing: border-box;
+  color: $storm;
+  margin: 14px;
+  padding: 15px;
+  min-height: calc(100% - 40px);
+  position: relative;
+}
+
+a {
+  color: $dark-grey;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -15,16 +33,6 @@
 }
 
 .container {
-  @media (min-width: $md) {
-    max-width: 1200px;
-    padding: 0 ($gutter*2) $gutter;
-  }
-
-  margin-top: $gutter;
-  padding: 0 $gutter $gutter;
-  text-align: center;
-}
-
-.paragraph {
-  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 }

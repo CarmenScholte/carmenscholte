@@ -1,14 +1,16 @@
 {
-  "title": "- CSL -",
+  "nav": {
+    "gallery": "GALLERIJ",
+    "artist": "MAKER",
+    "contact": "CONTACT"
+  },
   "about": {
     "personal": "Ik ben Carmen, een {{age}} jarige tekenaar uit Nederland. Ik heb pyschologie gestudeerd aan de RUG maar werk nu als software ontwikkelaar. Al sinds jonge leeftijd houd ik van tekenen en schilderen. Ondanks dat het maken van applicaties ook creatief werk is, mist het soms wat tastbaarheid. Daarom ben ik sinds november 2018 ondernemer en heb ik van mijn favoriete hobby mijn werk gemaakt.",
     "workprocess": "Ik vind het erg leuk om diep in de details te duiken en mijn portretten zo realistisch mogelijk te maken. Dit kost ontzettend veel tijd, maar het resultaat vind ik uiteindelijk het mooist. Ik probeer steeds gedetailleerder en realistischer te tekenen, mijn techniek te ontwikkelen, en zo veel mogelijk te leren. Hoewel ik het liefst portretten teken probeer ik mijn repertoire ook uit te breiden. Omdat de portretten altijd zwart-wit zijn ben ik begonnen met schilderen in kleur. Daarbij kopieer ik graag bekende en betere kunstenaars. In groot detail tekenen is erg leuk, maar het kost veel tijd om een groot oppervlakte te vullen. Daarom probeer ik grotere schilderijen te maken zonder meteen met kleine kwastjes in de details verzeild te raken."
   },
-
   "contact": {
     "address": "Groningen, Nederland",
-    "question": "Stuur gerust een bericht als je een portret wil laten maken of als je een vraag hebt over mijn werk.",
-    "media": "Stuur een <a href=\"mailto:c.scholte.lubberink@gmail.com\"><strong>email</strong></a> naar <strong>c.scholte.lubberink@gmail.com</strong> of stuur een bericht via <a href=\"https://www.facebook.com/carmenscholte/\"><strong>Facebook</strong></a> of <a href=\"https://www.instagram.com/carmenscholte/\"><strong>Instagram</strong></a>."
+    "question": "Wil je een portret laten maken of heb je een vraag over mijn werk?",
+    "media": "Stuur dan een <a href=\"mailto:c.scholte.lubberink@gmail.com\"><strong>email</strong></a> naar <strong>c.scholte.lubberink@gmail.com</strong> of stuur een bericht via <a href=\"https://www.facebook.com/carmenscholte/\"><strong>Facebook</strong></a> of <a href=\"https://www.instagram.com/carmenscholte/\"><strong>Instagram</strong></a>."
   }
-
 }

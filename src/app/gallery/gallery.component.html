@@ -1,26 +1,76 @@
-<div>
-  <div class="image-container">
+<div class="viewbox" #viewbox>
+  <div class="viewbox__content-wrapper">
+    <div class="viewbox__header">
+      <i class="viewbox__close fas fa-times" (click)="closeViewbox()"></i>
+    </div>
+    <div class="viewbox__content">
+      <img src="{{viewboxImage}}">
+    </div>
+  </div>
+</div>
+
+<div class="gallery-grid">
+  <div class="gallery-grid__image-wrapper"
+       (click)="openViewBox('assets/images/portrait-couple.jpg')">
     <img src="assets/images/portrait-couple.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2017</p>
+    </div>
   </div>
-  <div class="image-container">
+
+  <div class="gallery-grid__image-wrapper"
+      (click)="openViewBox('assets/images/portrait-teresa.jpg')">
     <img src="assets/images/portrait-teresa.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2017</p>
+    </div>
   </div>
-  <div class="image-container">
+
+  <div class="gallery-grid__image-wrapper"
+      (click)="openViewBox('assets/images/portrait-rune.jpg')">
     <img src="assets/images/portrait-rune.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2017</p>
+    </div>
   </div>
-  <div class="image-container">
-    <img src="assets/images/portrait-tobias.jpg">
+
+  <div class="gallery-grid__image-wrapper"
+       (click)="openViewBox('assets/images/portrait-tobias.jpg')">
+  <img src="assets/images/portrait-tobias.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2016</p>
+    </div>
   </div>
-  <div class="image-container">
+
+  <div class="gallery-grid__image-wrapper"
+       (click)="openViewBox('assets/images/portrait-randi.jpg')">
     <img src="assets/images/portrait-randi.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2015</p>
+    </div>
   </div>
-  <div class="image-container">
+
+  <div class="gallery-grid__image-wrapper"
+       (click)="openViewBox('assets/images/portrait-amy.jpg')">
     <img src="assets/images/portrait-amy.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2015</p>
+    </div>
   </div>
-  <div class="image-container">
+
+  <div class="gallery-grid__image-wrapper"
+       (click)="openViewBox('assets/images/portrait-anne.jpg')">
     <img src="assets/images/portrait-anne.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2014</p>
+    </div>
   </div>
-  <div class="image-container">
+
+  <div class="gallery-grid__image-wrapper"
+       (click)="openViewBox('assets/images/portrait-inez.jpg')">
     <img src="assets/images/portrait-inez.jpg">
+    <div class="image-overlay">
+      <p class="image-overlay__text">2014</p>
+    </div>
   </div>
 </div>

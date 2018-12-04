@@ -1,28 +1,20 @@
 // reset
-html, body {
-  color: $coal;
+html {
+  background-color: white;
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  min-height: 100%;
-  padding: 0;
-  text-align: center;
-  box-sizing: border-box;
+  height: 100%;
 }
 
 body {
-  background-color: $cloud;
-  position: relative;
+  margin: 0;
 }
 
 a {
-  color: $coal;
   text-decoration: none;
 }
 
-// no padding, no margin
-h1, h2, h3, h4, h5, p, ul {
-  margin: 0;
-  padding: 0;
+ul {
+  padding-inline-start: 0;
 }
 
 li {
@@ -31,6 +23,7 @@ li {
 
 img {
 	width: 100%;
+	vertical-align: middle;
 }
 
 p {

@@ -1,18 +1,35 @@
 @import '../../css/public';
 
+.personal {
+  margin-bottom: 50px;
+  &__text {
+    margin: 0;
+  }
+}
+
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 1000px;
-  margin: ($gutter/2);
+  margin-bottom: 50px;
+  &__text {
+    margin: 0;
+  }
 }
 
 .bedrijfsinfo {
-	margin: ($gutter/2);
+  text-align: center;
 }
 
 .icon {
   font-size: 30px;
   margin: $gutter/3;
+}
+
+
+.social {
+  text-align: center;
+
+  &__icon {
+    color: $dark-grey;
+    font-size: 50px;
+    margin: $gutter/3;
+  }
 }

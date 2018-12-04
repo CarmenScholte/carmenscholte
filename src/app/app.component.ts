@@ -14,7 +14,7 @@ export class AppComponent {
 	public showNavigation = true;
 
 	constructor(private router: Router,
-							private translateService: TranslateService) {
+							public translateService: TranslateService) {
 		this.router.events.subscribe((event: RouterEvent) => {
 			console.log(event);
 			if (event instanceof NavigationStart) {
@@ -30,7 +30,7 @@ export class AppComponent {
 		this.translateService.use('nl');
 	}
 
-	public translate(language: string) {
+	public switchLanguage(language: string) {
 		this.translateService.use(language);
 		console.log('Taal is nu ' + language);
 	}

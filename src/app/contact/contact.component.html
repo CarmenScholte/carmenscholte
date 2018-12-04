@@ -1,24 +1,22 @@
 <div class="container">
-  <div class="personal">
-    <p class="paragraph">Carmen Scholte Lubberink</p>
-    <p class="paragraph">{{'contact.address' | translate}}</p>
-  </div>
-
   <div class="contact-info">
-    <p class="paragraph">
-        {{ 'contact.question' | translate}} </p>
-    <p class="paragraph" [innerHtml]="'contact.media' | translate">
-    </p>
+    <p class="contact-info__text">{{ 'contact.question' | translate}} </p>
+    <p class="contact-info__text" [innerHtml]="'contact.media' | translate"></p>
   </div>
 
-  <a class="icon" href="https://www.facebook.com/carmenscholte/">
-    <i class="fab fa-facebook-square"></i>
-  </a>
-  <a class="icon" href="https://www.instagram.com/carmenscholte/">
-    <i class="fab fa-instagram"></i>
-  </a>
+  <div class="personal">
+    <p class="personal__text">Carmen Scholte Lubberink</p>
+    <p class="personal__text">{{'contact.address' | translate}}</p>
+    <p class="personal__text">KVK 70359242</p>
+  </div>
 
-  <div class="bedrijfsinfo">
-    <p class="paragraph">KVK 70359242</p>
+  <div class="social">
+    <a class="social__icon" href="https://www.facebook.com/carmenscholte/">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+
+    <a class="social__icon" href="https://www.instagram.com/carmenscholte/">
+      <i class="fab fa-instagram"></i>
+    </a>
   </div>
 </div>
