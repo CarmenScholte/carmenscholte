@@ -32,6 +32,5 @@ export class AppComponent {
 
 	public switchLanguage(language: string) {
 		this.translateService.use(language);
-		console.log('Taal is nu ' + language);
 	}
 }
