@@ -6,7 +6,7 @@ import { Component, OnInit, ViewChild, Renderer2, ElementRef } from '@angular/co
 })
 export class GalleryComponent implements OnInit {
 
-  @ViewChild('viewbox') viewbox: ElementRef;
+  @ViewChild('viewbox', {static: false}) private viewbox: ElementRef;
 
   public viewboxImage: string;
 
