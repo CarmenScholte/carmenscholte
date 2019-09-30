@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { DrawingsComponent } from './drawings/drawings.component';
 import { CvComponent } from './cv/cv.component';
+import { PaintingsComponent } from './paintings/paintings.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/gallery', pathMatch: 'full' },
-  { path: 'home', redirectTo: '/gallery', pathMatch: 'full' },
-	{ path: 'gallery', component: GalleryComponent },
+  { path: '', redirectTo: '/drawings', pathMatch: 'full' },
+  { path: 'home', redirectTo: '/drawings', pathMatch: 'full' },
+  { path: 'drawings', component: DrawingsComponent },
+  { path: 'paintings', component: PaintingsComponent },
 	{ path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
 	{ path: 'cv', component: CvComponent, data: {isCv: true} },
@@ -32,8 +34,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    GalleryComponent,
-		CvComponent
+    DrawingsComponent,
+		CvComponent,
+		PaintingsComponent
   ],
   imports: [
     BrowserModule,

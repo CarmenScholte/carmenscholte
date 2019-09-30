@@ -1,0 +1,41 @@
+@import './variables';
+
+.viewbox {
+  background-color: rgba(1,1,1, 0.9);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  z-index: 1;
+  height: 100%;
+
+  $header-height: 3.5rem;
+
+  &__header {
+    display: flex;
+    flex-basis: 1px;
+    padding: 1rem;
+    justify-content: flex-end;
+    color: white;
+    font-size: 1.5rem;
+    height: $header-height;
+  }
+
+  &__content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    height: calc(100% - #{$header-height});
+
+    &__image-wrapper {
+      height: 100%;
+    }
+
+    &__image {
+      width: auto;
+      height: 100%;
+    }
+  }
+}

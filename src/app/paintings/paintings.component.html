@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="image-wrapper" *ngFor="let row of rows; index as rowIdx">
+        <img class="image" src="{{paintingImageSources[(rowIdx * 2)]}}"
+          (click)="openViewBox(paintingImageSources[(rowIdx * 2)])">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="image-wrapper" *ngFor="let row of rows; index as rowIdx">
+        <img class="image" src="{{paintingImageSources[(rowIdx * 2) + 1]}}"
+          *ngIf="paintingImageSources[(rowIdx * 2) + 1]" (click)="openViewBox(paintingImageSources[(rowIdx * 2) + 1])">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="viewbox" #viewbox *ngIf="showViewbox">
+  <div class="viewbox__header">
+    <em class="viewbox__close fas fa-times" (click)="closeViewbox()"></em>
+  </div>
+
+  <div class="viewbox__content">
+    <div class="viewbox__content__image-wrapper">
+      <img class="viewbox__content__image" src="{{viewboxImage}}">
+    </div>
+  </div>
+</div>

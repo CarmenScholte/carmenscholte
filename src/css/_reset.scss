@@ -1,16 +1,27 @@
-// reset
+@import './variables.scss';
+
 html {
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
+  background-color: $white;
+  font-size: 16px;
   height: 100%;
 }
 
 body {
+  color: $grey-2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  height: 100%;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
+  color: $textBlue;
 }
 
 ul {
@@ -22,10 +33,15 @@ li {
 }
 
 img {
-	width: 100%;
-	vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
 }
 
 p {
-	line-height: 1.5;
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+:focus {
+  outline: none;
 }

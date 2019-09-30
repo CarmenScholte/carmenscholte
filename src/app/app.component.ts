@@ -1,6 +1,6 @@
-import { Component, HostListener, Inject } from '@angular/core';
-import { Router, NavigationStart, RouterEvent } from '@angular/router';
+import { Component, } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Router, RouterEvent, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,10 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
 
-  public toggle = false;
-
+	public toggle = false;
+	public showMobileNavMenu = false;
 	public showNavigation = true;
+	public language: string;
 
 	constructor(private router: Router,
 							public translateService: TranslateService) {
@@ -26,11 +27,13 @@ export class AppComponent {
 			}
 		});
 
+		this.language = 'nl';
 		this.translateService.setDefaultLang('nl');
 		this.translateService.use('nl');
 	}
 
 	public switchLanguage(language: string) {
 		this.translateService.use(language);
+		this.language = language;
 	}
 }

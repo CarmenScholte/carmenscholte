@@ -1,56 +1,7 @@
-@import '../css/public';
+@import "../css/variables";
 
-.header {
-  @media(min-width: $md) {
-    flex-direction: row;
-  }
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 50px;
-
-  &__title {}
-
-  &__language {
-    @media(min-width: $md) {
-      display: flex;
-    }
-    display: none;
-  }
+.page {
+  background-color: $white;
+  min-height: 100%;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-
-  &__menu {
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__menu-item {
-    @media (min-width: $md) {
-      border-bottom: 1px solid $dark-grey;
-      font-weight: 500;
-      margin: 0 $gutter/2;
-      padding: 5px;
-      transition: 0.2s;
-
-      &:hover {
-        border-color: $mid-grey;
-
-        .nav__menu-item__link {
-          color: $mid-grey;
-        }
-      }
-    }
-
-    padding: 0 20px;
-
-    &__link {
-      color: $storm;
-      transition: 0.2s;
-    }
-  }
-}
