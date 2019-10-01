@@ -7,7 +7,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DrawingsComponent } from './drawings/drawings.component';
 import { CvComponent } from './cv/cv.component';
@@ -18,7 +17,6 @@ const appRoutes: Routes = [
   { path: 'home', redirectTo: '/drawings', pathMatch: 'full' },
   { path: 'drawings', component: DrawingsComponent },
   { path: 'paintings', component: PaintingsComponent },
-	{ path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
 	{ path: 'cv', component: CvComponent, data: {isCv: true} },
   { path: '**', redirectTo: '/'}
@@ -32,7 +30,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
     ContactComponent,
     DrawingsComponent,
 		CvComponent,

@@ -1,27 +1,4 @@
-@import '../../css/public';
-
-.personal {
-  margin-bottom: 50px;
-  &__text {
-    margin: 0;
-  }
-}
-
-.contact-info {
-  margin-bottom: 50px;
-  &__text {
-    margin: 0;
-  }
-}
-
-.bedrijfsinfo {
-  text-align: center;
-}
-
-.icon {
-  font-size: 30px;
-  margin: $gutter/3;
-}
+@import '../../css/variables.scss';
 
 
 .social {
@@ -29,7 +6,7 @@
 
   &__icon {
     color: $textBlue;
-    font-size: 50px;
-    margin: $gutter/3;
+    font-size: 2rem;
+    margin: 1rem;
   }
 }

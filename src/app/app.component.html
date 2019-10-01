@@ -20,11 +20,11 @@
       </div>
 
       <div class="navbar__right">
-        <div class="navbar__item hide-on-mobile" routerLink="/about">
+        <!-- <div class="navbar__item hide-on-mobile" routerLink="/about">
           <a class="navbar__item__link">
             {{'nav.about' | translate}}
           </a>
-        </div>
+        </div> -->
 
         <div class="navbar__item hide-on-mobile" routerLink="/contact">
           <a class="navbar__item__link">
@@ -57,11 +57,11 @@
         </a>
       </div>
 
-      <div class="navbar__mobile__item" routerLink="/about" (click)="showMobileNavMenu = false">
+      <!-- <div class="navbar__mobile__item" routerLink="/about" (click)="showMobileNavMenu = false">
         <a class="navbar__item__link">
           {{'nav.about' | translate}}
         </a>
-      </div>
+      </div> -->
 
       <div class="navbar__mobile__item" routerLink="/contact" (click)="showMobileNavMenu = false">
         <a class="navbar__item__link">
@@ -71,7 +71,5 @@
     </div>
   </nav>
 
-  <div class="mt-4">
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
 </div>

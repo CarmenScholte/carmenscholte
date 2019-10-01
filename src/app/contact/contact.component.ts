@@ -6,9 +6,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  public age: number;
+  
   constructor() { }
 
   ngOnInit() {
+    this.age = this.getAge();
   }
+
+  private getAge(): number {
+		const birthday = new Date(1989, 3, 26);
+		const diff = Math.abs(Date.now() - birthday.getTime());
+		return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+	}
 
 }

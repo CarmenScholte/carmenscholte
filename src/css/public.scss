@@ -1,8 +1,9 @@
-@import 'reset';
+@import './reset.scss';
 
-@import 'variables';
-@import 'mixins';
+@import './variables.scss';
+@import './mixins.scss';
 
-@import 'image';
-@import 'navbar';
-@import 'viewbox';
+@import './image.scss';
+@import './navbar.scss';
+@import './image.scss';
+@import './typography.scss';

@@ -1,5 +1,11 @@
 @import './variables';
 
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: $tablet) {
     @content;
