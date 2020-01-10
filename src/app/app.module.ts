@@ -14,7 +14,7 @@ import { PaintingsComponent } from './paintings/paintings.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/drawings', pathMatch: 'full' },
-  { path: 'home', redirectTo: '/drawings', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'drawings', component: DrawingsComponent },
   { path: 'paintings', component: PaintingsComponent },
   { path: 'contact', component: ContactComponent },

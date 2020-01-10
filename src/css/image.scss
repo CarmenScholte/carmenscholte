@@ -16,14 +16,14 @@
 }
 
 .image {
-  transition-duration: 2s;
+  transition-duration: 200ms;
   width: 100%;
  
   @media (hover :hover){
     @include desktop {
       &:hover {
-        transform: scale(1.25, 1.25);
-        transition-duration: 10s;
+        transform: scale(1.05, 1.05);
+        transition-duration: 200ms;
       }
     }
   }
