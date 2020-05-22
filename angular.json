@@ -108,5 +108,8 @@
       }
     }
   },
-  "defaultProject": "carmenscholte"
+  "defaultProject": "carmenscholte",
+  "cli": {
+    "analytics": "5638a66a-f028-4dca-a6dd-bc5f2a865fbd"
+  }
 }
