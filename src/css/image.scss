@@ -8,23 +8,14 @@
 .background-image {
   width: 100%;
 }
+
 .image-wrapper {
   overflow: hidden;
   margin-bottom: 1rem;
   box-shadow: 0px 0px 5px 0px $offwhite;
-  border-radius: 2px;
 }
 
 .image {
   transition-duration: 200ms;
   width: 100%;
- 
-  @media (hover :hover){
-    @include desktop {
-      &:hover {
-        transform: scale(1.05, 1.05);
-        transition-duration: 200ms;
-      }
-    }
-  }
 }

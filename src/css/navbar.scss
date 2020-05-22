@@ -3,13 +3,15 @@
 .navbar {
   align-items: center;
   display: flex;
-  position: relative;
+  position: fixed;
   padding: 0.5rem 1rem;
-  height: 100%;
+  background-color: white;
   align-items: flex-start;
   color: $grey;
   font-family: "Assistant";
   text-transform: uppercase;
+  width: 100%;
+  z-index: 1;
 
   .container {
     display: flex;
@@ -47,6 +49,7 @@
 
     &__button {
       font-weight: 600;
+      padding: 0.5rem 1rem;
     }
   }
 
