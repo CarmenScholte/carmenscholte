@@ -17,7 +17,6 @@ export class AppComponent {
 	constructor(private router: Router,
 							public translateService: TranslateService) {
 		this.router.events.subscribe((event: RouterEvent) => {
-			console.log(event);
 			if (event instanceof NavigationStart) {
 				if (event.url === '/cv') {
 					this.showNavigation = false;
