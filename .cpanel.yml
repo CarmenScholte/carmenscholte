@@ -1,6 +1,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/carmenv0/public_html/
-    - rm -r /home3/carmenv0/public_html/*
+    - rm -r $DEPLOYPATH*
     - /bin/cp -a dist/. $DEPLOYPATH
-    - ./run-deploy.sh
