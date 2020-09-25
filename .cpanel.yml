@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPTH=/home3/carnebv0/public_html/
+    - ./run-deploy.sh
