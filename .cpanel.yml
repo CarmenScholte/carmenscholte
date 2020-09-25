@@ -1,4 +1,6 @@
 deployment:
   tasks:
-    - export DEPLOYPTH=/home3/carnebv0/public_html/
+    - export DEPLOYPATH=/home3/carnebv0/public_html/
+    - ng build --prod
+    - /bin/cp -R dist $DEPLOYPATH
     - ./run-deploy.sh
