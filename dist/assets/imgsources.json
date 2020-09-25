@@ -1,0 +1,24 @@
+{
+  "drawings": [
+    "assets/images/portrait-dog.jpg",
+    "assets/images/portrait-oma.jpg",
+    "assets/images/portrait-opa.jpg",
+    "assets/images/portrait-lubach.jpg",
+    "assets/images/portrait-couple.jpg",
+    "assets/images/portrait-samen.jpg",
+    "assets/images/portrait-rune.jpg",
+    "assets/images/portrait-randi.jpg",
+    "assets/images/portrait-anne.jpg",
+    "assets/images/portrait-teresa.jpg",
+    "assets/images/portrait-tobias.jpg",
+    "assets/images/portrait-amy.jpg",
+    "assets/images/portrait-inez.jpg"
+  ],
+  "paintings": [
+    "assets/images/painting-landscape2.jpg",
+    "assets/images/painting-landscape1.jpg",
+    "assets/images/painting-road.jpg",
+    "assets/images/painting-schulten.jpg",
+    "assets/images/painting-mondrian.jpg"
+  ]
+}

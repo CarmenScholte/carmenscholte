@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "drawings": "Drawings",
+    "paintings": "Paintings",
+    "about": "About",
+    "contact": "About/Contact"
+  },
+  "about": {
+    "hello": "Hello, I'm Carmen",
+    "personal": "I'm a {{age}} year old artist from the Netherlands. I studied psychology at the university of Groningen but found a job as a software developer. I have loved drawing and painting since a very young age. Although building applications is a creative endeavour, for me it's missing some real world touch. This is why I decided to make my most favorite hobby into a business.",
+    "workprocess": "I like to get into tiny details a lot to make my portraits as realistic as possible. This is very time consuming, but ultimately most satisfying. Im always stiving to draw more accurate, develop my technique, and learn as much as possible. Even though I enjoy making portraits the most, I also like to branche out and try different things. Since the portraits are in black and white I recently decided to pick up painting and learn how to use color. And how better to learn than to copy from other great artists. While getting into great detail is a lot of fun, but it takes forever to fill a large surface. This is why I'm also trying to make bigger paintings without immediately getting lost in the finest brush strokes."
+  },
+  "contact": {
+    "address": "Groningen, Netherlands",
+    "question": "Would you like to have a portrait made or do you have any questions about my work? Feel free to contact me.",
+    "media": "Send an <a href=\"mailto:c.scholte.lubberink@gmail.com\"><strong>email</strong></a> to <strong>c.scholte.lubberink@gmail.com</strong> or message me on <a href=\"https://www.facebook.com/carmenscholte/\">    <strong>Facebook</strong></a> or <a href=\"https://www.instagram.com/carmenscholte/\"><strong>Instagram</strong></a>."
+  }
+}
