@@ -6,7 +6,7 @@ branches:
   only:
     - master
 
-install:
+script:
   - npm i -g @angular/cli
   - npm i
   - ng build --prod
