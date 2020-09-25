@@ -3,6 +3,8 @@ deployment:
     - export DEPLOYPATH=/home3/carnebv0/public_html/
     - ls
     - echo $OSTYPE
+    - node -v
+    - npm -v
     - npm i npm@latest -g
     - npm i -g @angular/cli
     - npm i
