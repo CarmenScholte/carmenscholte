@@ -13,5 +13,5 @@ script:
 
 after_success:
   - set -e
-  - sudo apt-get install -y lftp
-  - lftp -c "set ftps:initial-prot ''; set ftp:ssl-force false; set ftp:ssl-protect-data false; set ssl:verify-certificate false; open ftp://$FTP_USER:$FTP_PASS@$FTP_HOST:21; mirror -eRv $FTP_DIR .; quit;"
+  - ls -a /usr/bin
+  - ftp --help
