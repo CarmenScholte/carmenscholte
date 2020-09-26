@@ -13,4 +13,5 @@ script:
 
 after_success:
   - set -e
-  - ftp -help
+  - ftp -n ftp.carmenscholte.com
+  - user admin@carmenscholte.com
