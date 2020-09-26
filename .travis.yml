@@ -13,5 +13,4 @@ script:
 
 after_success:
   - set -e
-  - ftp -n $FTP_HOST
-  - user $FTP_USER password $FTP_PASS
+  - sshpass -p $SITE_PASS scp README.md carmenv0@ftp.carmenscholte.com:public_html
