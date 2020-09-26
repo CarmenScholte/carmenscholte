@@ -13,4 +13,4 @@ script:
 
 after_success:
   - set -e
-  - ftp --help
+  - ftp -help
