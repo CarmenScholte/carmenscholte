@@ -13,5 +13,4 @@ script:
 
 after_success:
   - set -e
-  - ls -a /usr/bin
   - ftp --help
