@@ -13,4 +13,5 @@ script:
 
 after_success:
   - set -e
+  - apt-get install sshpass
   - sshpass -p $SITE_PASS scp README.md carmenv0@ftp.carmenscholte.com:public_html
