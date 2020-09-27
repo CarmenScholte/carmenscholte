@@ -1,0 +1,87 @@
+<nav class="header container" *ngIf="showNavigation">
+  <div class="header__left">
+    <div class="header__item hide-on-mobile" routerLink="/drawings">
+      <a class="header__item__link">
+        {{ 'nav.drawings' | translate }}
+      </a>
+    </div>
+
+    <div class="header__item hide-on-mobile" routerLink="/paintings">
+      <a class="header__item__link">
+        {{ 'nav.paintings' | translate }}
+      </a>
+    </div>
+  </div>
+
+  <div class="brand cursor-pointer my-4" routerLink="/home">
+    <a class="text-2xl"> CSL </a>
+  </div>
+
+  <div class="header__right">
+    <div class="header__item hide-on-mobile" routerLink="/contact">
+      <a class="header__item__link">
+        {{ 'nav.contact' | translate }}
+      </a>
+    </div>
+
+    <div class="header__item hide-on-mobile">
+      <a
+        class="header__item__button"
+        *ngIf="language !== 'nl'"
+        (click)="switchLanguage('nl')"
+        >NL</a
+      >
+      <a
+        class="header__item__button"
+        *ngIf="language !== 'en'"
+        (click)="switchLanguage('en')"
+        >EN</a
+      >
+    </div>
+
+    <div class="header__item show-on-mobile">
+      <em
+        class="header__icon fas fa-bars"
+        *ngIf="!showMobileNavMenu"
+        (click)="showMobileNavMenuChange.emit(true)"
+      ></em>
+      <em
+        class="header__icon fas fa-times"
+        *ngIf="showMobileNavMenu"
+        (click)="showMobileNavMenuChange.emit(false)"
+      ></em>
+    </div>
+  </div>
+
+  <div class="header__mobile" *ngIf="showMobileNavMenu">
+    <div
+      class="header__mobile__item"
+      routerLink="/drawings"
+      (click)="showMobileNavMenuChange.emit(false)"
+    >
+      <a class="header__item__link">
+        {{ 'nav.drawings' | translate }}
+      </a>
+    </div>
+
+    <div
+      class="header__mobile__item"
+      routerLink="/paintings"
+      (click)="showMobileNavMenuChange.emit(false)"
+    >
+      <a class="header__item__link">
+        {{ 'nav.paintings' | translate }}
+      </a>
+    </div>
+
+    <div
+      class="header__mobile__item"
+      routerLink="/contact"
+      (click)="showMobileNavMenuChange.emit(false)"
+    >
+      <a class="header__item__link">
+        {{ 'nav.contact' | translate }}
+      </a>
+    </div>
+  </div>
+</nav>

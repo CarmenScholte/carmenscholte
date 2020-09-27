@@ -11,19 +11,19 @@ import { ContactComponent } from './contact/contact.component';
 import { DrawingsComponent } from './drawings/drawings.component';
 import { CvComponent } from './cv/cv.component';
 import { PaintingsComponent } from './paintings/paintings.component';
+import { HeaderComponent } from './components/header/header.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/drawings', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'drawings', component: DrawingsComponent },
   { path: 'paintings', component: PaintingsComponent },
   { path: 'contact', component: ContactComponent },
-	{ path: 'cv', component: CvComponent, data: {isCv: true} },
-  { path: '**', redirectTo: '/'}
+  { path: 'cv', component: CvComponent, data: { isCv: true } },
+  { path: '**', redirectTo: '/' },
 ];
 
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http);
 }
 
 @NgModule({
@@ -32,22 +32,23 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     ContactComponent,
     DrawingsComponent,
-		CvComponent,
-		PaintingsComponent
+    CvComponent,
+    PaintingsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-		HttpClientModule,
-		RouterModule.forRoot(appRoutes),
-		TranslateModule.forRoot({
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes),
+    TranslateModule.forRoot({
       loader: {
-				provide: TranslateLoader,
-				useFactory: HttpLoaderFactory,
-				deps: [HttpClient]
-      }
-		})
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,8 +1,8 @@
-@import "../css/variables.scss";
+@import '../css/variables.scss';
 
 .page {
-  background-color: $white;
-  min-height: 100%;
+  @apply bg-white;
+  min-height: 100vh;
 }
 
 .router-wrapper {

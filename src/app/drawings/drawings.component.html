@@ -1,16 +1,25 @@
 <div class="container">
+  <div class="background"></div>
+
   <div class="row">
     <div class="col-12 col-sm-6">
       <div class="image-wrapper" *ngFor="let row of rows; index as rowIdx">
-        <img class="image" src="{{drawingImageSources[(rowIdx * 2)]}}"
-          (click)="openViewBox(drawingImageSources[(rowIdx * 2)])">
+        <img
+          class="image"
+          src="{{ drawingImageSources[rowIdx * 2] }}"
+          (click)="openViewBox(drawingImageSources[rowIdx * 2])"
+        />
       </div>
     </div>
 
     <div class="col-12 col-sm-6">
       <div class="image-wrapper" *ngFor="let row of rows; index as rowIdx">
-        <img class="image" src="{{drawingImageSources[(rowIdx * 2) + 1]}}" *ngIf="drawingImageSources[(rowIdx * 2) + 1]"
-          (click)="openViewBox(drawingImageSources[(rowIdx * 2) + 1])">
+        <img
+          class="image"
+          src="{{ drawingImageSources[rowIdx * 2 + 1] }}"
+          *ngIf="drawingImageSources[rowIdx * 2 + 1]"
+          (click)="openViewBox(drawingImageSources[rowIdx * 2 + 1])"
+        />
       </div>
     </div>
   </div>
@@ -23,7 +32,7 @@
 
   <div class="viewbox__content">
     <div class="viewbox__content__image-wrapper">
-      <img class="viewbox__content__image" src="{{viewboxImage}}">
+      <img class="viewbox__content__image" src="{{ viewboxImage }}" />
     </div>
   </div>
 </div>

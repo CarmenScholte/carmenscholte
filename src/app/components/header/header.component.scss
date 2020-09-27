@@ -1,16 +1,12 @@
-@import "./variables";
+@import '../../../css/variables.scss';
+@import '../../../css/mixins.scss';
 
-.navbar {
-  align-items: center;
-  display: flex;
-  position: fixed;
-  padding: 0.5rem 1rem;
-  background-color: white;
-  align-items: flex-start;
-  color: $grey;
-  font-family: "Assistant";
-  text-transform: uppercase;
-  width: 100%;
+.header {
+  @apply sticky;
+  @apply top-0;
+  @apply flex;
+  @apply items-center;
+  @apply font-light;
   z-index: 1;
 
   .container {
@@ -18,8 +14,7 @@
   }
 
   &__brand {
-    padding: 0.5rem 0;
-    font-size: 1.5rem;
+    cursor: pointer;
   }
 
   &__left {
@@ -44,11 +39,10 @@
     font-size: 1rem;
 
     &__link {
-      padding: 0.5rem 1rem;
+      @apply mx-4;
     }
 
     &__button {
-      font-weight: 600;
       padding: 0.5rem 1rem;
     }
   }
@@ -91,7 +85,7 @@
   }
 }
 
-.scroll-lock {
+.js-scroll-lock {
   overflow: hidden;
   height: 100%;
 }
