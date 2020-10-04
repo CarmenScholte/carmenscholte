@@ -1,33 +1,33 @@
-<div class="background-image-wrapper">
-  <img class="background-image" src="assets/images/placeholder-background.jpeg">
-</div>
+<div>
+  <app-header theme="light"></app-header>
 
-<div class="container mt-5">
-  <h4>{{ 'about.hello' | translate }}</h4>
+  <div class="container mt-5 font-light">
+    <h1>{{ 'about.hello' | translate }}</h1>
 
-  <p>{{ 'about.personal' | translate: {age: age} }}</p>
+    <p class="mt-2">{{ 'about.personal' | translate: {age: age} }}</p>
 
-  <p>{{ 'about.workprocess' | translate }}</p>
+    <p>{{ 'about.workprocess' | translate }}</p>
 
-  <div class="contact-info">
-    <p>{{ 'contact.question' | translate}} </p>
+    <div class="contact-info mt-4">
+      <p>{{ 'contact.question' | translate}} </p>
 
-    <p [innerHtml]="'contact.media' | translate"></p>
-  </div>
+      <p [innerHtml]="'contact.media' | translate"></p>
+    </div>
 
-  <div>Carmen Scholte Lubberink</div>
+    <div class="mt-4">Carmen Scholte Lubberink</div>
 
-  <div>{{'contact.address' | translate}}</div>
+    <div>{{'contact.address' | translate}}</div>
 
-  <div>KVK 70359242 | BTW NL001561514B98</div>
+    <div>KVK 70359242 | BTW NL001561514B98</div>
 
-  <div class="social">
-    <a class="social__icon" href="https://www.facebook.com/carmenscholte/">
-      <i class="fab fa-facebook-square"></i>
-    </a>
+    <div class="social">
+      <a class="social__icon" href="https://www.facebook.com/carmenscholte/">
+        <i class="fab fa-facebook-square"></i>
+      </a>
 
-    <a class="social__icon" href="https://www.instagram.com/carmenscholte/">
-      <i class="fab fa-instagram"></i>
-    </a>
+      <a class="social__icon" href="https://www.instagram.com/carmenscholte/">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
   </div>
 </div>

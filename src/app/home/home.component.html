@@ -1,3 +1,15 @@
-<div id="home" class="container">
-  <h1>Home</h1>
+<div id="home" [ngClass]="{ 'js-scroll-lock': showMobileNavMenu }">
+  <app-header [(showMobileNavMenu)]="showMobileNavMenu"></app-header>
+
+  <div class="hero">
+    <div class="hero__text container">
+      <h1 class="hero__text--title">Carmen Scholte Lubberink</h1>
+      <h2 class="hero__text--subtitle">Allround creative</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="flex">
+    </div>
+  </div>
 </div>

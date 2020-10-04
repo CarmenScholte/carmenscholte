@@ -24,7 +24,7 @@ a {
 	font-size: 14px;
 }
 
-.header {
+.top {
 	border-bottom: 3px solid #e5e5e5;
 	display: flex;
 	flex-direction: row;
@@ -44,12 +44,12 @@ a {
 	}
 }
 
-.header-section {
+.top-section {
 	display: flex;
 	flex-direction: column;
 }
 
-.header-section--right {
+.top-section--right {
 	text-align: center;
 	justify-content: center;
 }

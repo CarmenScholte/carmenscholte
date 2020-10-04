@@ -1,25 +1,56 @@
 <div class="container">
-  <div class="background"></div>
+  <app-header theme="light"></app-header>
 
-  <div class="row">
+
+  <div class="flex flex-col">
+    <div class="flex">
+      <div class="painting flex-1 p-4">
+        <div class="painting__image-wrap">
+          <img src="../../assets/images/painting-blue-mountains.png" alt="painting-blue-mountains">
+        </div>
+
+        <div class="text-sm">
+          <p class="mt-1">Blue mountains 2020</p>
+          <p class="mt-1">Oil on canvas 30x60cm</p>
+          <p class="mt-1">200&euro;</p>
+        </div>
+      </div>
+
+      <div class="painting flex-1 p-4">
+        <img src="../../assets/images/painting-landscape2.jpg" alt="painting-landscape2">
+
+        <div class="text-sm">
+          <p class="mt-1">Lakeview 2019</p>
+          <p class="mt-1">Oil on canvas 30x24cm</p>
+          <p class="mt-1">50&euro;</p>
+        </div>
+      </div>
+
+      <div class="painting flex-1 p-4">
+        <img src="../../assets/images/painting-landscape1.jpg" alt="painting-landscape1">
+
+        <div class="text-sm">
+          <p class="mt-1">Fields 2019</p>
+          <p class="mt-1">Oil on canvas 30x24cm</p>
+          <p class="mt-1">50&euro;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row mt-8">
     <div class="col-12 col-sm-6">
       <div class="image-wrapper" *ngFor="let row of rows; index as rowIdx">
-        <img
-          class="image"
-          src="{{ paintingImageSources[rowIdx * 2] }}"
-          (click)="openViewBox(paintingImageSources[rowIdx * 2])"
-        />
+        <img class="image" src="{{ paintingImageSources[rowIdx * 2] }}"
+          (click)="openViewBox(paintingImageSources[rowIdx * 2])" />
       </div>
     </div>
 
     <div class="col-12 col-sm-6">
       <div class="image-wrapper" *ngFor="let row of rows; index as rowIdx">
-        <img
-          class="image"
-          src="{{ paintingImageSources[rowIdx * 2 + 1] }}"
-          *ngIf="paintingImageSources[rowIdx * 2 + 1]"
-          (click)="openViewBox(paintingImageSources[rowIdx * 2 + 1])"
-        />
+        <img class="image" src="{{ paintingImageSources[rowIdx * 2 + 1] }}" *ngIf="paintingImageSources[rowIdx * 2 + 1]"
+          (click)="openViewBox(paintingImageSources[rowIdx * 2 + 1])" />
       </div>
     </div>
   </div>

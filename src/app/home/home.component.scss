@@ -1,0 +1,28 @@
+.hero {
+  @apply relative;
+  @apply w-full;
+  @apply shadow;
+  height: 700px;
+  top: -4rem; 
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("../../assets/images/background-placeholder.png");
+  background-size: cover;
+  background-position: center;
+
+  &__text {
+    padding-top: 500px;
+    @apply text-white;
+    @apply uppercase;
+
+    &--title {
+      @apply font-extrabold;
+      @apply uppercase;
+      @apply text-5xl;
+      letter-spacing: -2px;
+
+    }
+    &--subtitle {
+      @apply text-3xl;
+      letter-spacing: 2px;
+    }
+  }
+}
