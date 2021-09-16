@@ -15,11 +15,8 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "customWebpackConfig": {
-              "path": "webpack.config.js"
-            },
             "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
@@ -27,7 +24,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets", "src/.htaccess"],
-            "styles": ["src/css/public.scss"],
+            "styles": ["node_modules/tailwindcss/tailwind.css", "src/css/public.scss"],
             "scripts": []
           },
           "configurations": {
@@ -57,12 +54,9 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "carmenscholte:build",
-            "customWebpackConfig": {
-              "path": "webpack.config.js"
-            }
+            "browserTarget": "carmenscholte:build"
           },
           "configurations": {
             "production": {
